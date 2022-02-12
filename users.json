@@ -1,0 +1,50 @@
+[
+    {
+        "user_id": "u0001",
+        "name": "たろう",
+        "roles":[
+            {
+                "role_id":"r01",
+                "role_name":"ロール一"
+            },
+            {
+                "role_id":"r02",
+                "role_name":"ロール二"
+            },
+            {
+                "role_id":"r03",
+                "role_name":"ロール三"
+            }
+        ],
+        "menus": [
+            {
+                "menu_id":"m01",
+                "menu_name":"メニュー一"
+            },
+            {
+                "menu_id":"m02",
+                "menu_name":"メニュー二"
+            },
+            {
+                "menu_id":"m03",
+                "menu_name":"メニュー三"
+            }
+        ]
+    },
+    {
+        "user_id": "u0002",
+        "name": "じろう",
+        "roles":[
+            {
+                "role_id":"r03",
+                "role_name":"ロール三"
+            }
+        ],
+       "menus": [
+            {
+                "menu_id":"m03",
+                "menu_name":"メニュー三"
+            }
+        ]
+    }
+]

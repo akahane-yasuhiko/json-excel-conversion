@@ -1,11 +1,14 @@
 const fs = require('fs');
 const xlsx = require('xlsx')
 
-const buf = fs.readFileSync("taro.xlsx");
+// target='taro'
+target='users'
+
+const buf = fs.readFileSync(target + '.xlsx');
 const book = xlsx.read(buf, {type:'buffer'});
 
-const sheet = book.Sheets["taro"];
-const data =xlsx.utils.sheet_to_json(sheet);
-const json_str =JSON.stringify(data);
+const sheet = book.Sheets[target];
+const sheet_data =xlsx.utils.sheet_to_json(sheet);
+const json_str =JSON.stringify(sheet_data);
 
-fs.writeFileSync("taro.json", json_str);
+fs.writeFileSync(target+'_gen.json', json_str);
